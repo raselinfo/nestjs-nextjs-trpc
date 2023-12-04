@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pkg:server":"cd ./apps/server && pnpm i",
+    "pkg:web":"cd ./apps/web && pnpm i",
     "dev": "pnpm run --parallel dev",
     "build:server": "pnpm --filter server build",
     "build:web": "pnpm --filter web build",
